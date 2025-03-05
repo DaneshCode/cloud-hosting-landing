@@ -234,19 +234,66 @@
         <h2 class="section-title">پرسش‌های متداول</h2>
         <div class="faq-list">
           <div class="faq-item">
-            <h3>هاست ابری چیست؟</h3>
-            <p>
-              هاست ابری یک سرویس میزبانی وب است که از منابع چند سرور برای ارائه
-              پایداری و مقیاس‌پذیری بالا استفاده می‌کند.
-            </p>
+            <button class="accordion">
+              هاست ابری چیست؟
+              <i class="uil uil-angle-down"></i>
+            </button>
+            <div class="panel">
+              <p>
+                هاست ابری یک سرویس میزبانی وب است که از منابع چند سرور برای
+                ارائه پایداری و مقیاس‌پذیری بالا استفاده می‌کند.
+              </p>
+            </div>
           </div>
           <div class="faq-item">
-            <h3>چگونه می‌توانم هاست ابری بخرم؟</h3>
-            <p>
-              برای خرید هاست ابری، به صفحه خرید هاست در وب‌سایت ما مراجعه کنید و
-              یکی از پلن‌های موجود را انتخاب کنید.
-            </p>
+            <button class="accordion">
+              چگونه می‌توانم هاست ابری بخرم؟
+              <i class="uil uil-angle-down"></i>
+            </button>
+            <div class="panel">
+              <p>
+                برای خرید هاست ابری، به صفحه خرید هاست در وب‌سایت ما مراجعه کنید
+                و یکی از پلن‌های موجود را انتخاب کنید.
+              </p>
+            </div>
           </div>
+          <div class="faq-item">
+            <button class="accordion">
+              آیا پشتیبانی 24 ساعته دارید؟
+              <i class="uil uil-angle-down"></i>
+            </button>
+            <div class="panel">
+              <p>
+                بله، تیم پشتیبانی ما به صورت 24 ساعته و در تمام روزهای هفته
+                آماده پاسخگویی به مشکلات شما است.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="accordion">
+              آیا امکان ارتقای پلن وجود دارد؟
+              <i class="uil uil-angle-down"></i>
+            </button>
+            <div class="panel">
+              <p>
+                بله، شما می‌توانید در هر زمان پلن خود را به نسخه بالاتر ارتقا
+                دهید و از امکانات بیشتری استفاده کنید.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="accordion">
+              گواهی SSL رایگان ارائه می‌دهید؟
+              <i class="uil uil-angle-down"></i>
+            </button>
+            <div class="panel">
+              <p>
+                بله، ما برای تمام هاست‌های ابری خود گواهی SSL رایگان Let's
+                Encrypt ارائه می‌دهیم.
+              </p>
+            </div>
+          </div>
+
           <!-- Add more FAQ items here -->
         </div>
       </section>
@@ -337,53 +384,6 @@
         </nav>
       </footer>
     </div>
-
-    <!-- Add intersection observer for animations -->
-    <script>
-      const observerOptions = {
-        threshold: 0.1,
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, observerOptions);
-
-      document
-        .querySelectorAll('.animate-on-scroll')
-        .forEach((el) => observer.observe(el));
-    </script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const mainNav = document.querySelector('.main-nav');
-
-        menuToggle.addEventListener('click', function () {
-          mainNav.classList.toggle('active');
-        });
-
-        // Back to Top button functionality
-        const backToTopButton = document.getElementById('back-to-top');
-
-        window.addEventListener('scroll', function () {
-          if (window.pageYOffset > 300) {
-            backToTopButton.style.display = 'block';
-          } else {
-            backToTopButton.style.display = 'none';
-          }
-        });
-
-        backToTopButton.addEventListener('click', function () {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          });
-        });
-      });
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>

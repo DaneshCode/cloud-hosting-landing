@@ -308,9 +308,48 @@ img {
   padding: 1rem;
 }
 
-.faq-item h3 {
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
+.accordion {
+  background-color: var(--background-light);
+  color: #000000;
+  font-size: medium;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: right;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion i {
+  transition: transform 0.3s;
+}
+
+.accordion.active i {
+  transform: rotate(180deg);
+}
+
+.accordion:hover,
+.accordion.active {
+  background-color: #ddd;
+}
+
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 1rem;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.panel.open {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Contact Form */
