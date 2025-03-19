@@ -25,7 +25,7 @@ A modern, responsive landing page for a cloud hosting service, built with HTML5 
 
 ## 💻 Live Demo
 
-You can view the live demo of the calculator by clicking the link below:
+You can view the live demo of the Cloud Hosting Landing Page by clicking the link below:
 
 <a href="https://daneshcode.github.io/cloud-hosting-landing" target="_blank">🔗 Cloud Hosting Landing Page</a>
 

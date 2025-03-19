@@ -502,3 +502,25 @@ img {
     grid-template-columns: 1fr; /* 1 column */
   }
 }
+
+.foot {
+  text-align: center;
+  padding: 1rem;
+}
+
+.foot a {
+  color: #288ed9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem;
+  font-size: larger;
+}
+
+.foot a > i {
+  font-size: x-large;
+}
+
+.foot a:hover {
+  color: #026db9;
+  text-decoration: underline;
+}
